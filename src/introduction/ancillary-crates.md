@@ -8,7 +8,7 @@ The first step in working with a project is to create it, the main way to do thi
 
 The core crate that ties all work with Espressif chips in Rust is the `esp-hal` crate. Through it, you will be able to perform basic initialization of the chip, as well as access drivers for the peripherals available on the chip. The full [`esp-hal` documentation] for selected chip will give unambiguous information about what peripherals are available to use, and the stability of their respective drivers.
 
-Furthermore, you may want to use more advanced functionality of the chip. For example, network and connectivity. This part of the ecosystem is the responsibility of `esp-radio`, which combines drivers for the communication protocols available on one or another of Espressif's products: `Wi-Fi`, `BLE`, `esp-now` and low-level `IEEE 802.15.4` for the lower layers of communication. More detailed information for each chip is available in the [`esp-radio` sub-repository].
+Furthermore, you may want to use more advanced functionality of the chip. For example, network and connectivity. This part of the ecosystem is the responsibility of `esp-radio`, which combines drivers for the communication protocols available on one or another of Espressif's products: `Wi-Fi`, `BLE`, `esp-now` and low-level `IEEE 802.15.4` for the lower layers of communication. More detailed information for each chip is available in the [`esp-radio` sub-repository]. It is also worth mentioning that radio support requires the stack to run continuously in the background (timers, interrupts, state machines). `esp-radio` relies on an implementation of [`esp-radio-rtos-driver`], which defines the scheduling and runtime interface the stack needs to run reliably. `esp-rtos` is the default backend we ship and support; in principle user is free replace it with another implementation of the driver. `esp-generate` will add `esp-rtos` automatically when you enable the appropriate template options.
 
 For more advanced work with chip memory and to use collections from the `alloc` crate in `no_std` that require heap allocation, you are welcome to use `esp-alloc`. A separate [chapter in the book](./../application-development/alloc.md) is devoted to this.
 
@@ -50,6 +50,7 @@ The most popular Hardware Abstraction Layer in the Embedded Rust environment is 
 
 [`esp-hal` documentation]: https://docs.espressif.com/projects/rust/esp-hal/latest/
 [`esp-radio` sub-repository]: https://github.com/esp-rs/esp-hal/tree/main/esp-radio
+[`esp-radio-rtos-driver`]: https://github.com/esp-rs/esp-hal/tree/main/esp-radio-rtos-driver
 [`embedded-hal`]: https://docs.rs/embedded-hal/latest/embedded_hal/index.html
 [`rand_core`]: https://crates.io/crates/rand_core
 [`embedded-io`]: https://crates.io/crates/embedded-io
