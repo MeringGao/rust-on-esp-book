@@ -1,5 +1,7 @@
 <p style="text-align:center;"><img src="./assets/esp-rs.svg" width="25%"></p>
 
+> [阅读中文版 (Read in Chinese)](./zh/)
+
 # Preface
 
 Welcome to our guide to embedded Rust development on Espressif products. This book is designed to help you get started and become comfortable using our tools and ecosystem. Along the way, we’ll introduce the structure of our software stack, and walk through basic workflows using project generation and tooling. By the end, you’ll be ready to explore more advanced material through our reference documentation and external training resources.

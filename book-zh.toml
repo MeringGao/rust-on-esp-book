@@ -1,0 +1,11 @@
+[book]
+title        = "The Rust on ESP Book（中文版）"
+description  = "在 Espressif 芯片上使用 Rust 编程语言的综合指南"
+language     = "zh"
+src = "zh/src"
+
+[rust]
+edition = "2024"
+
+[output.html]
+git-repository-url = "https://github.com/esp-rs/book"
