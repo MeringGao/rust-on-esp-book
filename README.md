@@ -1,5 +1,7 @@
 # The Rust on ESP Book
 
+> [中文版在线阅读](https://meringgao.github.io/rust-on-esp-book/)
+
 This repository contains the source of "The Rust on ESP" book.
 
 ## Quickstart

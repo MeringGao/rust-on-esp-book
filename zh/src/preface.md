@@ -1,6 +1,8 @@
 <p style="text-align:center;"><img src="../assets/esp-rs.svg" width="25%"></p>
 
 > [Read in English (阅读英文版)](../)
+>
+> 本书中文版由 [vibe translate](https://github.com/MeringGao/rust-on-esp-book) 翻译。
 
 # 前言
 
