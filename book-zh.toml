@@ -8,4 +8,4 @@ src = "zh/src"
 edition = "2024"
 
 [output.html]
-git-repository-url = "https://github.com/esp-rs/book"
+git-repository-url = "https://github.com/MeringGao/rust-on-esp-book"
